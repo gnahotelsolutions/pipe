@@ -1,0 +1,43 @@
+{
+    "name": "gnahotelsolutions/pipe",
+    "description": "Small class to chain operations.",
+    "keywords": [
+        "gnahotelsolutions",
+        "pipe"
+    ],
+    "homepage": "https://github.com/gnahotelsolutions/pipe",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "David Llop",
+            "email": "dllop@gnahs.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/var-dumper": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GNAHotelSolutions\\Pipe\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GNAHotelSolutions\\Pipe\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
