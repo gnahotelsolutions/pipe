@@ -29,4 +29,9 @@ class Pipe
     {
         return $this->value;
     }
+
+    public function clone(): self
+    {
+        return new self($this->value);
+    }
 }
